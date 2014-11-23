@@ -1,0 +1,11 @@
+   for(int i=0;i<2;++i){
+     for(int j=0;j<41;++j){
+        Infile_Cali>>mip_pps_d8_mpv[i][j];
+        Infile_Cali>>mip_pps_d8_sigma[i][j];
+        Infile_Cali>>mip_pps_d8_width[i][j];
+        Infile_Cali>>mip_nps_d8_mpv[i][j];
+        Infile_Cali>>mip_nps_d8_sigma[i][j];
+        Infile_Cali>>mip_nps_d8_width[i][j];
+        //cout<<"PS MIP: "<<mip_nps_d8_mpv[i][j]<<endl;
+     }
+   }

@@ -1,0 +1,26 @@
+
+float pedestal_pps_d8_mean[2][41];
+float pedestal_pps_d8_sigma[2][41];
+float pedestal_pps_d5_mean[2][41];
+float pedestal_pps_d5_sigma[2][41];
+float pedestal_nps_d8_mean[2][41];
+float pedestal_nps_d8_sigma[2][41];
+float pedestal_nps_d5_mean[2][41];
+float pedestal_nps_d5_sigma[2][41];
+
+  for(int i=0;i<2;++i){
+     for(int j=0;j<41;++j){
+        infile_pedestal>>pedestal_pps_d5_mean[i][j];
+        infile_pedestal>>pedestal_pps_d5_sigma[i][j];
+        infile_pedestal>>pedestal_nps_d5_mean[i][j];
+        infile_pedestal>>pedestal_nps_d5_sigma[i][j];
+     }
+   }
+   for(int i=0;i<2;++i){
+     for(int j=0;j<41;++j){
+        infile_pedestal>>pedestal_pps_d8_mean[i][j];
+        infile_pedestal>>pedestal_pps_d8_sigma[i][j];
+        infile_pedestal>>pedestal_nps_d8_mean[i][j];
+        infile_pedestal>>pedestal_nps_d8_sigma[i][j];
+     }  
+   }
